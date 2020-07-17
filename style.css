@@ -1,26 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
 .slider {
     width: 1000px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .slider-container {
-    width: 1800px;
+    overflow: hidden;
+}
+
+.slider-translation {
     display: flex;
     position: relative;
-    left: 0;
+    left: 0px;
     transition: .4s
 }
 
 .slider-item {
     height: 200px;
+    margin: 0 10px;
     min-width: 300px;
-    margin-left: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    left: 0
 }
 
 .slider-item:nth-child(1) {
